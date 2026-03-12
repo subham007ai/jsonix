@@ -2,7 +2,7 @@
 
 > Seven precision JSON tools. Fast, private, free.
 
-🔗 **[jsonix.dev](https://jsonix.dev)** — Live site
+🔗 **[jsonix.dev]([https://jsonix.netlify.app/])** — Live site
 
 ## Tools
 
