@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JSONix
 
-## Getting Started
+> Seven precision JSON tools. Fast, private, free.
 
-First, run the development server:
+🔗 **[jsonix.dev](https://jsonix.dev)** — Live site
+
+## Tools
+
+| Tool | Description |
+|------|-------------|
+| JSON Formatter | Beautify raw JSON with precise indentation |
+| JSON Validator | Find every error with plain English hints |
+| JSON Minifier | Strip whitespace, reduce payload size |
+| JSON → CSV | Convert arrays of objects to spreadsheets |
+| JSON Diff | Compare two JSON structures visually |
+| JSON Path Tester | Test JSONPath expressions in real time |
+| Schema Validator | Validate JSON against a JSON Schema |
+
+## Why JSONix
+
+Most JSON tools either explain nothing when 
+something breaks, or send your data to a server.
+JSONix does neither.
+
+- 🔒 **100% client-side** — nothing leaves your browser
+- 🎯 **Plain English errors** — not "Unexpected token"
+- ⚡ **Zero server latency** — runs entirely in your browser
+- 🔗 **Shareable URLs** — share your JSON state instantly
+- 🆓 **Free forever** — no account, no limits
+
+## Tech Stack
+
+- Next.js 14 App Router
+- TypeScript
+- CodeMirror 6
+- Supabase (waitlist only)
+- Vercel
+
+## Running Locally
 
 ```bash
+git clone https://github.com/subham007ai/jsonix.git
+cd jsonix
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` file in the root:
 
-## Learn More
+```
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
-To learn more about Next.js, take a look at the following resources:
+These are only needed for the waitlist feature.
+All JSON tools work without them.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Issues and PRs welcome.
+Open an issue before building a large feature
+so we can discuss direction first.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT — see [LICENSE](./LICENSE)
